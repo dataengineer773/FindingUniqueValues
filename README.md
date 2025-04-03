@@ -1,0 +1,4 @@
+We want to select all unique values in a column, Use unique to view an array of all unique values in a column, Alternatively, value_counts will display all unique values with the number of times each value appears
+Both unique and value_counts are useful for manipulating and exploring categorical columns. Very often in categorical columns there will be classes that need to be handled in the data wrangling phase.
+For example, in the Titanic dataset, PClass is a column indicating the class of a passenger’s ticket, There were three classes on the Titanic; however, if we use value_counts we can see a problem.
+While almost all passengers belong to one of three classes as expected, a single passenger has the class  There are a number of strategies for handling this type of issue but for now just realize that “extra” classes are common in categorical data and should not be ignored.
